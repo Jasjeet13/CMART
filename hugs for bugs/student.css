@@ -1,0 +1,421 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: white;
+}
+
+.heading {
+  text-align: center;
+  padding: 9px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  width: 500px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin: -200px 0 0 0;
+}
+
+.progress-bar-back {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: lightgray;
+  border: none;
+  z-index: -1;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.progress-bar-front {
+  position: absolute;
+  height: 4px;
+  width: 0%;
+  background-color: black;
+  border: none;
+  z-index: -1;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s linear width;
+}
+
+.step {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid lightgray;
+  color: lightgray;
+}
+
+.step.checked {
+  color: black;
+  border-color: black;
+  transition: all 0.4s linear;
+  transition-delay: 0.3s;
+}
+
+.step.checked small {
+  position: absolute;
+  bottom: -20px;
+  font-family: cursive;
+}
+
+.button-container {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 70px 10px 190px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  background-color: lightgray;
+}
+
+@media (max-width: 500px) {
+  .progress-container {
+      width: 90vw;
+  }
+}
+
+.form-step {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  font-family: "Open Sans", sans-serif;
+  font-style: bold;
+  font-weight: 500;
+}
+
+.form-step h2 {
+  font-size: 30px;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-weight: 800;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  flex: 1;
+  margin-right: -20px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-weight: 800;
+}
+
+.input-container input {
+  flex: 2;
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+#name {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.profile-pic-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.profile-pic-container label {
+  flex: 1;
+  margin-right: -55px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-weight: 800;
+}
+
+.circular-input {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin-right: 60px;
+  position: relative;
+}
+
+#upload-icon {
+  position: absolute;
+  font-size: 24px; /* Adjust the size of the icon */
+  top: 50%; /* Position the icon in the center vertically */
+  left: 50%; /* Position the icon in the center horizontally */
+  transform: translate(-50%, -50%); /* Center the icon */
+  cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+  color: black;/* Change the color of the icon */
+  z-index: 1; /* Ensure the icon appears above the file input */
+}
+
+.circular-input input[type="file"] {
+  display: none; /* Hide the file input */
+}
+
+.circular-input img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Styles for email input */
+#email {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+/* Styles for password input */
+#password {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+/* Styles for contact number input */
+#contact {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-container label{
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.input-container label[for="email"] + input + i {
+  position: absolute;
+  left: 370px; /* Adjust the left position to control the distance from the input field */
+  top: 38%; /* Vertically center the icon within the input box */
+  transform: translateY(-50%); /* Center the icon vertically */
+  font-size: 20px; /* Adjust the font size of the icon */
+}
+
+.input-container label[for="password"] + input + i {
+  position: absolute;
+  left: 370px; /* Adjust the left position to control the distance from the input field */
+  top: 62%; /* Vertically center the icon within the input box */
+  transform: translateY(-50%); /* Center the icon vertically */
+  font-size: 20px; /* Adjust the font size of the icon */
+}
+
+.input-container label[for="contact"] + input + i {
+  position: absolute;
+  left: 370px; /* Adjust the left position to control the distance from the input field */
+  top: 86%; /* Vertically center the icon within the input box */
+  transform: translateY(-50%); /* Center the icon vertically */
+  font-size: 20px; /* Adjust the font size of the icon */
+}
+
+#university {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+/* Styles for password input */
+#major {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+/* Styles for contact number input */
+#gradYear {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.profile-pic-container label{
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#date-of-birth {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+#gender{
+  width: 72%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px; /* Add some spacing between inputs */
+}
+
+.product-preferences {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preference-box {
+  width: 120px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.preference-box input[type="radio"] {
+  display: none;
+}
+
+.preference-box input[type="radio"]:checked + label {
+  background-color: white;
+  color: black;
+}
+
+.final-step {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
