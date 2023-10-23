@@ -1,0 +1,27 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#total {
+    font-weight: bold;
+    font-size:xx-large;
+    color: #27ae60;
+}
