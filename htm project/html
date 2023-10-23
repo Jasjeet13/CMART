@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-title {
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: #33ff4e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+
+    <div class="product">
+        <img src="c:\Users\JANVI SETHI\OneDrive\Pictures\Screenshots\Screenshot 2023-10-16 142810.png" alt="Product 1">
+        <h2 class="product-title">Product 1</h2>
+        <p class="product-price">$19.99</p>
+        <p>Description of Product 1.</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="c:\Users\JANVI SETHI\OneDrive\Pictures\Screenshots\Screenshot 2023-05-19 080844.png" alt="Product 2">
+        <h2 class="product-title">Product 2</h2>
+        <p class="product-price">$29.99</p>
+        <p>Description of Product 2.</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="c:\Users\JANVI SETHI\OneDrive\Pictures\Screenshots\Screenshot 2023-05-15 121936.png" alt="Product 3">
+        <h2 class="product-title">Product 3</h2>
+        <p class="product-price">$39.99</p>
+        <p>Description of Product 3.</p>
+        <button>Add to Cart</button>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+</head>
+<body>
+    <h1>Product Categories</h1>
+    <ul>
+        <li><a href="uniforms.html">Uniforms</a></li>
+        <li><a href="electricity.html">Electricity</a></li>
+        <li><a href="stationery.html">Stationery</a></li>
+        <!-- Add more categories as needed -->
+    </ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Categories</title>
+    <style>
+        /* CSS for category list */
+        ul.categories {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        li.category {
+            margin-right: 20px;
+        }
+
+        a.category-link {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        a.category-link:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Categories</h1>
+    <ul class="categories">
+        <li class="uniforms"><a class="category-link" href="#" onclick="showCategory('Uniform')">Uniform</a></li>
+        <li class="electrical appliances "><a class="category-link" href="#" onclick="showCategory('Electricity')">Electricity</a></li>
+        <li class="stationary"><a class="category-link" href="#" onclick="showCategory('Stationery')">Stationery</a></li>
+        <!-- Add more categories as needed -->
+    </ul>
+
+    <div id="categoryDisplay">
+        <!-- Content for selected category will be displayed here -->
+    </div>
+
+    <script>
+        // JavaScript for category selection
+        function showCategory(category) {
+            // Replace this logic with your own content or links
+            const categoryDisplay = document.getElementById('categoryDisplay');
+            categoryDisplay.innerHTML = `<h2>${category} Products</h2>`;
+        }
+    </script>
+</body>
+</html>
