@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.landingpage.jpg'); /* Change the path to your desired background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.splash {
+    text-align: center;
+}
+
+.splash img {
+    max-width: 200px;
+    animation: fadeInOut 2s ease-in-out infinite; /* Fade In and Out animation */
+}
+
+.splash p {
+    margin-top: 10px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out; /* Fade In animation */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
