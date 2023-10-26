@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Category  </h1>
+    </header>
+    
+    <div class="product">
+        <div class="product-image">
+            <img src="pics.jpg" alt="Product Image" width="500">
+        </div>
+        <div class="product-details">
+            <h2 class="r">Description</h2>
+            <p>This is a great product that you'll love. It has many features and benefits.</p>
+            <h2>Price: $99.99</h2>           
+           <button class="add-to-cart-button" onclick="addToCart('headphones', 99.99)">Add to Cart</button>
+            <span class="cart-icon" onclick="addToCart('Product 1', 10)"><i class="fas fa-shopping-cart"></i></span>
+            <button class="wishlist-button" onclick="addToWishlist('Product 1', 10)">Add to Wishlist</button>
+            <span class="wishlist-icon" onclick="addToWishlist('Product 1', 10)"><i class="fas fa-heart"></i></span>
+        </div>
+    </div>
+   
+    <footer>
+        &copy; CMart
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
