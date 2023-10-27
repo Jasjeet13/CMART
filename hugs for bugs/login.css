@@ -1,0 +1,112 @@
+/* styles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: bright gray;
+}
+
+.outer-container {
+    width: 65%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: purple;
+    height: 85%;
+}
+
+.inner-container {
+    display: flex;
+    height: 100%;
+}
+
+.left-box, .right-box {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-box{
+    background-color: #00308F;
+}
+
+.right-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Enable absolute positioning for child elements */
+    top: -10px; /* Adjust the vertical position as needed */
+    margin-bottom: 100px; /* Adjust the bottom margin as needed */
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.input-box {
+    position: relative;
+    margin: 20px 0;
+    top: -84px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: #f0f0f0; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    color: #333; /* Text color */
+    outline: none; /* Remove outline on focus */
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+    
+}
+
+.input-box input::placeholder {
+    color: #00308F; /* Placeholder text color */
+}
+
+.input-box input:focus {
+    background: #fff; /* Background color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow on focus */
+}
+
+.login-form {
+    text-align: center;
+    position: relative; /* Enable absolute positioning for child elements */
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Adjust the bottom margin to control the space between "Hello" and the input fields */
+    position: absolute; /* Enable absolute positioning for "Hello" text */
+    top: -130px; /* Adjust the vertical position as needed */
+    left: 35%; /* Position "Hello" text in the horizontal center */
+    transform: translateX(-20%); /* Center horizontally */
+    font-family: Open Sans;
+    font-style: bold;
+    font-weight: 5000;
+}
+
+.input-box i {
+    position: absolute;
+    left: 200px; /* Adjust the left position to control the distance from the input field */
+    top: 50%; /* Vertically center the icon within the input box */
+    transform: translateY(-50%); /* Center the icon vertically */
+    font-size: 20px; /* Adjust the font size of the icon */
+}

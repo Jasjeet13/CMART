@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="box box-left">
+            <a href="#" data-description="Home"><i class="fi fi-rr-home"></i></a>
+            <a href="#" data-description="User"><i class="fi fi-rr-user"></i></a>
+        </div>
+
+        <div class="box box-middle">
+            <img src="CMart logo.png" alt="Image Description" class="image-fit">
+        </div>
+
+        <div class="box box-right">
+            <a href="#" data-description="Categories">    
+                <i class="fi fi-rr-list-timeline"></i>
+            </a>
+            
+            <a href="#" data-description="Sell">
+                <i class="fi fi-rr-tags"></i>
+            </a>
+            
+
+            <a href="#" data-description="Wishlist">
+                <i class="fi fi-rr-heart"></i>
+            </a>
+
+            <a href="#" data-description="Cart">
+                <i class="fi fi-rr-shopping-cart"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="page-content">
+        <div class="left-box">
+            <div class="image-gallery">
+                <div class="main-image">
+                    <img id="mainImage" src="It Ends with Us_ A Novel (Volume 1).jpeg" alt="Main Image">
+                </div>
+                <div class="small-images">
+                    <img src="image_a.jpeg" alt="Small Image 1" onclick="changeMainImage('image_a.jpeg')">
+                    <img src="image_b.jpeg" alt="Small Image 2" onclick="changeMainImage('image_b.jpeg')">
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+
+        <div class="separator"></div> <!-- This is the separator line -->
+
+        <div class="right-box">
+            <div class="right-box">
+                <span class="product-name">
+                    It Ends With Us
+                    <span class="heart-icon">&#10084;</span>
+                </span>
+                
+                <p class="desc">Dive into 'It Ends with Us,' a gripping novel that explores love, resilience, and the complexities of life. 
+                    This emotional journey will keep you captivated till the very last page
+                 by Collen Hoover</p>
+                <p  class="price">Price: Rs. 1500</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="book.js"></script>
+    
+</body>
+</html>

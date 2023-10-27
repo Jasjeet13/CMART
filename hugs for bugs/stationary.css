@@ -1,0 +1,76 @@
+/* Sidebar styles */
+.sidebar {
+    background-color: lightgray; /* Background color of the sidebar */
+    color: black; /* Text color inside the sidebar */
+    width: 250px; /* Width of the sidebar */
+    height: 100%; /* Full height of the viewport */
+    position: fixed; /* Fixed position to stay on the left */
+    top: 0;
+    left: 0;
+    padding: 20px; /* Spacing around the content */
+}
+
+.sidebar h2 {
+    margin: 0;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+.sidebar a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color for links */
+    font-size: 18px;
+}
+
+/* Content styles */
+.content {
+    margin-left: 260px; /* Adjust this to match the width of your sidebar */
+    padding: 20px; /* Add spacing around the content */
+}
+
+/* Additional styling can be applied as needed */
+
+
+.logo img {
+    width: 120px; /* Set the desired width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add margin to the right of the image */
+}
+
+.dropdown {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    padding: 2px;
+    color: black;
+    size:14px;
+    font-weight: bold;
+}
+
+.dropdown a {
+     /* Set the desired text color for the links in the dropdown */
+    text-decoration: none;
+}
+
+/* Show the dropdown menu when the "Books" link is hovered */
+.sidebar li:hover .dropdown {
+    display: block;
+}
+
+.sidebar h2 {
+    margin-top: 20px; /* Adjust the value to set the desired space */
+}

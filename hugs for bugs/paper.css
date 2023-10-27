@@ -1,0 +1,147 @@
+/* Sidebar styles */
+.sidebar {
+    background-color: black; /* Background color of the sidebar */
+    color: white; /* Text color inside the sidebar */
+    width: 250px; /* Width of the sidebar */
+    height: 100%; /* Full height of the viewport */
+    position: fixed; /* Fixed position to stay on the left */
+    top: 0;
+    left: 0;
+    padding: 20px; /* Spacing around the content */
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 20px; /* Spacing between list items */
+}
+
+.sidebar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color for links */
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Content styles */
+.content {
+    margin-left: 260px; /* Adjust this to match the width of your sidebar */
+    padding: 20px; /* Add spacing around the content */
+}
+
+
+.logo img {
+    width: 120px; /* Set the desired width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add margin to the right of the image */
+}
+
+.dropdown {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dropdown li {
+    padding: 2px;
+    color: black;
+    size:14px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown a {
+     /* Set the desired text color for the links in the dropdown */
+    text-decoration: none;
+}
+
+/* Show the dropdown menu when the "Books" link is hovered */
+.sidebar li:hover .dropdown {
+    display: block;
+}
+
+.sidebar h2 {
+    margin-top: 20px; /* Adjust the value to set the desired space */
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+.category-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.category-item {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.001);
+    transition: transform 0.2s;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-column: auto; 
+    grid-row: auto;
+    margin-left: 50px;
+}
+
+.category-item img {
+    max-width: 70%;
+    height: 70%;
+    object-fit: cover; /* Maintain image aspect ratio and cover the div */
+}
+
+.category-item a {
+    text-decoration: none; /* Remove underline for the anchor */
+}
+
+.category-item h3 {
+    font-size: 16px;
+    color: black; /* Set text color to black */
+}
+.category-item h3.product-price {
+    font-size: 14px;
+    color: gray; /* Set text color to black */
+}
+

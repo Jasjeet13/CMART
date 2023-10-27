@@ -1,0 +1,406 @@
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/* Style the page */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar container */
+.navbar {
+    background-color: white;
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/* Style the individual boxes */
+.box {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    margin: 8px;
+}
+
+.box-left {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.box-middle {
+    flex: 0.5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-right {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.image-fit {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Style the icons */
+.box-right a,
+.box-left a {
+    font-size: 25px;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.box-right a:hover,
+.box-left a:hover {
+    color: lightgray;
+}
+
+.icon-description {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+
+.content-box {
+    background-color: white; /* Set your desired background color */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners for the box */
+    margin: 10px auto; /* Adjust margins as needed */
+    padding: 20px; /* Adjust padding as needed */
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+
+
+.inner-box-1,.inner-box-2,.inner-box-3,.inner-box-4 {
+    width: 23%; /* Adjust the width as needed */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.inner-box-1{
+    background-color: red;
+    
+}
+.inner-box-2{
+    background-color: green;
+    
+}
+.inner-box-3{
+    background-color: black;
+    
+}
+.inner-box-4{
+    background-color: yellow;
+    
+}
+
+.fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-box h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: black; /* Change this to the desired text color, e.g., "blue" or a color code like "#FF0000" for red */
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    text-decoration: none ;
+}
+
+.content-box h2:hover {
+    color: lightgray;
+}
+
+.quote-box {
+    background-color: white; /* Set the background color */
+    color: lightgray; /* Set the text color */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center; /* Center-align the text */
+    font-size: 14px; /* Adjust the font size */
+}
+
+.quote-box p {
+    margin: 0; /* Remove any default margins */
+    font-style: italic; /* Italicize the text */
+}
+
+.additional-box {
+    text-align: center;
+    margin: 40px auto; /* Adjust margins as needed */
+    width: 45%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.sub-box {
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+}
+
+.sub-box i {
+    font-size: 50px; 
+    color: lightgray;
+    transform: rotate(270deg);
+}
+
+.sub-box span {
+    font-size: 15px; /* Adjust the font size as needed */
+    color: black; /* Text color */
+    font-weight: bold; /* Text weight */
+    margin-top: -20px; 
+    font-family: Open Sans;
+}
+
+.sub-box .additional-text {
+    font-size: 10px; /* Adjust the font size for additional text */
+    color:lightgray 
+}
+
+
+.product-container {
+    text-align: center;
+}
+
+.main-box {
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 60px;
+    border-radius: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.box-row {
+    display: flex;
+    justify-content: center;
+}
+
+.product-box {
+    width: 400px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    margin: 30px;
+    
+}
+
+.product-box-content {
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust the font size */
+    color: white; /* Adjust the text color */
+    font-family: Open Sans;
+}
+
+.product-box img {
+    max-width: 100%; /* Ensure the image fits inside the sub-box */
+    max-height: 100px; /* Adjust the maximum height of the image */
+}
+
+.gray-box {
+    width: 1300px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.round-box-row {
+    display: flex;
+    justify-content: center;
+}
+
+.round-box {
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 50%; /* Make it round */
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative; 
+    margin-bottom: 120px;
+}
+
+.gray-box h2 {
+    font-size: 24px; /* Adjust the font size */
+    color: black; /* Adjust the font color */
+    text-transform: uppercase;
+    font-family: Open Sans;
+}
+
+.round-box i {
+    color: black; /* Set icon color to black */
+    font-size: 25px; /* Increase the icon size */
+    font-weight: bold; 
+}
+
+.round-box.category1::after {
+    content: "Beddings"; /* Add your text here */
+    font-size: 16px;
+    color: black;
+    margin-top: 20px; /* Add margin to create space between the circular icons and text */
+    position: absolute;
+    bottom: -30px; /* Adjust this value for vertical positioning */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans;
+}
+.round-box.category2::after {
+    content: "Cleaning Supplies"; /* Add your text here */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px; /* Add margin to create space between the circular icons and text */
+    position: absolute;
+    bottom: -50px; /* Adjust this value for vertical positioning */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans;
+}
+.round-box.category3::after {
+    content: "Storage"; /* Add your text here */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px; /* Add margin to create space between the circular icons and text */
+    position: absolute;
+    bottom: -30px; /* Adjust this value for vertical positioning */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans;
+}
+.round-box.category4::after {
+    content: "Food"; /* Add your text here */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px; /* Add margin to create space between the circular icons and text */
+    position: absolute;
+    bottom: -30px; /* Adjust this value for vertical positioning */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans;
+}
+.round-box.category5::after {
+    content: "Stationary"; /* Add your text here */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px; /* Add margin to create space between the circular icons and text */
+    position: absolute;
+    bottom: -30px; /* Adjust this value for vertical positioning */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans;
+}
+.round-box.category6::after {
+    content: "Entertainment"; /* Add your text here */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px; /* Add margin to create space between the circular icons and text */
+    position: absolute;
+    bottom: -30px; /* Adjust this value for vertical positioning */
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: Open Sans;
+}
+
+.new-box {
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the box height */
+    width: 100%;
+    height: 350px; /* Set a larger fixed height for the "New Box" */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 1px solid lightgray;
+}
+
+
+
+.left-side-box {
+    flex: 2;
+    background-color: lightblue;
+    padding: 10px;
+    height: 298px;
+    margin-top: 10px;
+}
+
+.right-side-box {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.right-box {
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 20px;
+    height: 110px;
+}
+

@@ -1,0 +1,202 @@
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/* Style the page */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar container */
+.navbar {
+    background-color: white;
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/* Style the individual boxes */
+.box {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    margin: 8px;
+}
+
+.box-left {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.box-middle {
+    flex: 0.5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-right {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.image-fit {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Style the icons */
+.box-right a,
+.box-left a {
+    font-size: 25px;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.box-right a:hover,
+.box-left a:hover {
+    color: lightgray;
+}
+
+.icon-description {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+.page-content {
+    height: 700px;
+    display: flex; /* Use flexbox to create a horizontal layout */
+    align-items: stretch; /* Stretch both left and right boxes to match the height */
+    justify-content: center; /* Center the content horizontally */
+
+    /* Optional: Add background color to the boxes */
+}
+
+.left-box, .right-box {
+    flex: 1; /* Both left and right boxes will share available space equally */
+    padding: 20px; /* Add padding inside the boxes */
+}
+
+.separator {
+    width: 2px; /* Set the desired width for the separator */
+    background-color: lightgray; /* Set the color of the separator */
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-image {
+    width: 400px; /* Set the desired width for the main image container */
+    height: 400px; /* Set the desired height for the main image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainImage {
+    max-width: 100%; /* Ensure the main image scales within the container */
+    max-height: 100%; /* Ensure the main image scales within the container */
+}
+
+.small-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.small-images img {
+    width: 100px; /* Set the desired width for the smaller images */
+    height: 120px; /* Set the desired height for the smaller images */
+    margin: 0 10px; /* Add spacing between the small images */
+    cursor: pointer;
+    border: 2px solid transparent; /* Add a border to the small images */
+    transition: border-color 0.3s; /* Add a transition for the border color change */
+}
+
+.small-images img:hover {
+    border-color: lightgray; /* Change the border color on hover */
+}
+
+/* Style the right box content */
+.right-box {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.desc {
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.add-to-cart-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.add-to-cart-button:hover {
+    background-color: lightgray;
+}
+
+.price  {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.heart-icon {
+    color: gray; /* Set the initial color of the heart icon */
+    transition: color 0.3s; /* Add a transition for a smooth color change */
+    margin-left: 400px;
+
+    /* Define styles for when it's hovered */
+}
+
+.heart-icon:hover {
+    color: red; /* Set the color to red when hovered */
+}
+
+
