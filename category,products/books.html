@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://image.freepik.com/free-photo/blurred-background-blur-bookshelves-book-store-background-education-concept_7190-15.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 0;
+        }
+
+        .category-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-title {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Georgia, serif', sans-serif;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .category-item {
+            border: 1px solid #dddddd23;
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.001);
+            transition: transform 0.2s;
+            height: 250px; /* Add a fixed height */
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        .category-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-item img {
+            max-width: 50%;
+            height: 50%;
+            object-fit: cover; /* Maintain image aspect ratio and cover the div */
+        }
+
+        .category-item-title {
+            font-size: 16px;
+            margin: 16px 0;
+        }
+
+        .category-button {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .category-button:hover {
+            background-color: #943324;
+        }
+
+        .category-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .category {
+            margin-right: 20px;
+        }
+
+        .arrow {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        .product-title {
+        font-size: 16px;
+        margin: 5px 0; /* Reduce the margin to 5px top and bottom */
+        }
+
+        .product-price {
+        font-size: 20px;
+        color: #3498db;
+        margin: 5px 0; /* Reduce the margin to 5px top and bottom */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="category-section">
+        <h2 class="category-title">BOOKS</h2>
+        <div class="category-grid">
+            <!-- Your category items go here -->
+            <div class="category-item">
+                <img src="https://miro.medium.com/v2/resize:fit:10944/1*S81O15rjKfG-BFdnNC6-GQ.jpeg" alt="MATHS BOOK">
+                <h3 class="product-title">MATHS</h3>
+                <p class="product-description">Best in reading</p>
+                <p class="product-price">$19.99</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            
+            <div class="category-item">
+                <img src="https://image3.mouthshut.com/images/imagesp/925754575s.jpg" alt="DBMS">
+                <h3 class="product-title">DBMS</h3>
+                <p class="product-description">8th edition</p>
+                <p class="product-price">$25.90</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://freebooks.pk/wp-content/uploads/2016/09/Object-Oriented-Programming-1.jpg" alt="OOPS">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://i.thenile.io/r1000/9780451531568.jpg?r=5eafe9e703ce8" alt="HELEN KELLER">
+                <h3 class="product-title">HELEN KELLER</h3>
+                <p class="product-description">Biography of HELEN KELLER</p>
+                <p class="product-price">$29</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://rukminim1.flixcart.com/image/1664/1664/book/8/9/4/operating-system-original-imaeqkhh8khp33nt.jpeg?q=90" alt="OPERATING SYSTEM">
+                <h3 class="product-title">OPERATING SYSTEM</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$14</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://thumbs.dreamstime.com/z/cleaning-service-cleaning-service-icon-147977688.jpg" alt="Cleaning Supplies">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/31/10/clothes-icon-set-in-black-vector-3113110.jpg" alt="Clothing">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://st2.depositphotos.com/2899505/6481/v/950/depositphotos_64811539-stock-illustration-home-appliances-electronics-icons-vector.jpg" alt="Electronics and Appliance">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://cdn1.iconfinder.com/data/icons/seo-internet-set-4/64/SEO__internet_4-25-512.png" alt="Personal Items">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://cdn.onlinewebfonts.com/svg/img_96344.png" alt="Entertainment">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://www.pngkey.com/png/detail/218-2180016_quiet-relaxing-settings-comfort-icon-png.png" alt="Decor and Comfort">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+            <div class="category-item">
+                <img src="https://icon-library.com/images/food-app-icon/food-app-icon-0.jpg" alt="Food and Snacks">
+                <h3 class="product-title">OOPS</h3>
+                <p class="product-description">2nd edition</p>
+                <p class="product-price">$25</p>
+                <button class="add-to-cart-button" onclick="location.href='another-page.html'">Add to Cart</button>
+                <button class="buy-now-button">Wishlist</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
