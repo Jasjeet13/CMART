@@ -1,30 +1,6 @@
-/* body {
+/* styles.css */
+body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-h1 {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-
-.categories {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.category {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 ul {
@@ -33,80 +9,125 @@ ul {
 }
 
 li {
+    margin: 10px 0;
+}
+
+
+
+#total {
+    font-weight: 1000;
+    font-size:xx-large ;
+    color: #27ae60;
+}
+/* styles.css */
+/* Wishlist styling */
+#wishlist {
+    background-color: #f8f8f8;
+    border: 2px solid #eaeaea;
+    padding: 10px;
+    margin-top: 20px;
+    list-style: none;
+}
+#wishlist li {
+    margin: 10px 0;
     padding: 5px;
-}
-
-.category:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-} */
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.product-image {
-    flex: 1;
-    padding: 20px;
-    float :left;
-    margin-right: 10px;
-}
-
-.product-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.product-details {
-    margin-left: 10px;
-    flex: 1;
-    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
 }
 
 
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.s{
+    color: hsl(60, 4%, 5%);
 }
-.r{
-    text-align:left;
+.pro{
+    color: #0b0b0b;
 }
-/* Add the styles for the wishlist button */
-/* .product-actions {
-    display: flex;
-    flex-direction: column;
+h2{
+    color: #03060d;
 }
-
-.add-to-cart-button, .wishlist-button {
-    background-color: #3d3b3b9c;
-    color: #fff;
-    padding: 10px 20px;
+.tot{
+    color: #e74c3c;
+    font-weight:1000;
+    font-size: x-large;
+}
+/* Styling for the Remove button */
+.button-remove {
+    background-color: hsl(267, 78%, 57%); /* Red color */
+    color: white;
     border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-remove:hover {
+    background-color: #912bc0; /* Darker red color on hover */
+}
+/* Styles for the cart icon */
+.cart-icon {
+    font-size: 1.5rem; /* Adjust the icon size as needed */
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* Styles for the wishlist icon */
+.wishlist-icon {
+    font-size: 1.5rem; /* Adjust the icon size as needed */
+    margin-right: 10px;
+    cursor: pointer;
+    color: #ff5722; /* Customize the color to your liking */
+}
+/* Set the background color to a combination of grey and black */
+body {
+    background: linear-gradient(to bottom, #333333ad, #555);
+    color: rgba(7, 7, 7, 0.934); /* Text color (white) for better readability on dark background */
+}
+.to{
+    font-size: xx-large;
+}
+/* Set a background image for the page */
+.ca{
+    background-image:url('cartack.jpg') ;
+}
+.cat{
+    background-image: url('wishes.jpg');
+}
+body {
+    /*background-image: url('cartack.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: rgb(10, 9, 9); /* Text color (white) for better readability on the background image */
+}
+/* Change the color of the "Remove" button in both cart and wishlist */
+button.button-remove {
+    background-color: red; /* Change to your desired color */
+    color: white; /* Text color on the button */
+    border: none; /* Remove the border if desired */
+}
+
+/* Change the color of the "Go to Home" button in cart */
+button.button-go-home-cart {
+
+    padding: 10px 20px;
+    border:#0b0b0b;
     cursor: pointer;
     font-size: 18px;
     border-radius: 5px;
     margin-bottom: 10px;
+    background-color: green; /* Change to your desired color */
+    color: white; /* Text color on the button */
+    border: none; /* Remove the border if desired */
 }
 
-.add-to-cart-button:hover, .wishlist-button:hover {
-    background-color: #0f0e0e;
+/* Change the color of the "Go to Home" button in wishlist */
+button.button-go-home-wishlist {
+    background-color: blue; /* Change to your desired color */
+    color: white; /* Text color on the button */
+    border: none; /* Remove the border if desired */
 }
- */ */
+.wh{
+    color: #f8f8f8;
+}
+
+
+

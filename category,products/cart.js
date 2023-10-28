@@ -10,11 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         cart.forEach((item, index) => {
             const newItem = document.createElement('li');
-            newItem.textContent = `${item.product} - $${item.price}`;
+            newItem.textContent = `${item.product} - ${item.price}`;
             
             // Add a "Remove" button for each item
             const removeButton = document.createElement('button');
             removeButton.textContent = 'Remove';
+            removeButton.className = 'button-remove';
             removeButton.onclick = function() {
                 removeFromCart(index);
             };
@@ -46,6 +47,7 @@ function removeFromCart(index) {
             // Add a "Remove" button for each item
             const removeButton = document.createElement('button');
             removeButton.textContent = 'Remove';
+            removeButton.className = 'button-remove';
             removeButton.onclick = function() {
                 removeFromCart(newIndex);
             };
@@ -59,5 +61,6 @@ function removeFromCart(index) {
 }
 // JavaScript function to go to the home page
 function goToHome() {
-    window.location.href = 'NEWCART.html'; // Replace 'home.html' with the actual URL of your home page
+    window.location.href = 'papers.html'; // Replace 'home.html' with the actual URL of your home page
 }
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Progress Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="vendor.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Step-up your Profile</h1>
+    </div>
+
+    <div class="container">
+      <div class="progress-container">
+        <hr class="progress-bar-back" />
+        <hr class="progress-bar-front" />
+        <div class="step checked">
+          <i class="fas fa-check"></i>
+          <small>Start</small>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-step" style="display: none;">
+      <h2>Venders Information</h2>
+      <div class="input-container">
+        <label for="name">Business Name</label>
+        <input type="text" id="name" placeholder="Enter your Business Name" />
+      </div>
+
+      <div class="profile-pic-container">
+        <label for="profile-pic">Business Logo</label>
+        <div class="circular-input">
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*" />
+            <i class="fas fa-camera" id="upload-icon"></i>
+            <img id="profile-image" src=""  />
+        </div>
+    </div>
+    </div>
+
+
+    <div class="form-step" style="display: none;">
+      <h2>Company Information</h2>
+
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+      </div>
+
+      <div class="input-container">
+        <label for="Years in business.">Years in business.</label>
+        <input type="password" id="password" placeholder="Enter your Years in business." />
+        
+      </div>
+
+      <div class="input-container">
+        <label for="contact">Contact Number</label>
+        <input type="tel" id="contact" placeholder="Enter your contact number" />
+        
+      </div>
+
+      <div class="input-container">
+        <label for="Address">Address</label>
+        <input type="Address" id="Address" placeholder="Enter your Address" />
+        
+      </div>
+
+      <div class="input-container">
+        <label for="Website">Website</label>
+        <input type="Website" id="Website" placeholder="Enter your Website" />
+       
+      </div>
+
+    </div>
+
+     
+
+    <div class="form-step" style="display: none;">
+      <h2>Vendor Policies</h2>
+      <div class="input-container">
+        <label for="Return policies">Return policies</label>
+        <input type="text" id="Return policies" placeholder="Enter your Return policies" />
+      </div>
+    
+      <div class="input-container">
+        <label for="Shipping Information">Shipping Information</label>
+        <input type="text" id="major" placeholder="Enter your Shipping Information" />
+      </div>
+    
+      <div class="input-container">
+        <label for="Warranty ">Warranty </label>
+        <input type="text" id="Warranty " placeholder="Enter your Warranty " />
+      </div>
+    </div>
+
+
+    <div class="form-step" style="display: none;">
+      <h2>Product Or Servies Information</h2>
+    
+      <!-- Date of Birth -->
+      <div class="input-container">
+        <label for="Product Details">Product Details</label>
+        <input type="text" id="Write Product Details" placeholder="Enter your Product Details "  />
+      </div>
+    
+      <!-- Gender -->
+      <div class="input-container">
+        <label for=" payment terms"> payment terms</label>
+        <input type="text" id="Write Payment terms" placeholder="Enter your Payment terms "  />
+        
+      </div>
+    </div>
+
+
+    <div class="form-step" style="display: none;">
+      <h2>CMart : Your One-Stop Shop</h2>
+      <p>Accept our terms and conditions</p>
+      <label class="switch">
+        <input type="checkbox" id="terms-checkbox">
+        <span class="slider round"></span>
+      </label>
+      
+    </div>
+
+    <div class="button-container">
+      <button class="btn" id="prev" disabled>
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="btn" id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <script src="vendor.js"></script>
+  </body>
+</html>

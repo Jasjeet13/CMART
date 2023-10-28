@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add a "Remove" button for each item in the wishlist
             const removeButton = document.createElement('button');
             removeButton.textContent = 'Remove';
+            removeButton.className = 'button-remove';
             removeButton.onclick = function() {
                 removeFromWishlist(index);
             };
@@ -37,6 +38,7 @@ function removeFromWishlist(index) {
             // Add a "Remove" button for each item in the wishlist
             const removeButton = document.createElement('button');
             removeButton.textContent = 'Remove';
+            removeButton.className = 'button-remove';
             removeButton.onclick = function() {
                 removeFromWishlist(newIndex);
             };
@@ -48,5 +50,5 @@ function removeFromWishlist(index) {
 }
 // JavaScript function to go to the home page
 function goToHome() {
-    window.location.href = 'NEWCART.html'; // Replace 'home.html' with the actual URL of your home page
+    window.location.href = 'product.html'; // Replace 'home.html' with the actual URL of your home page
 }
