@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .categories-title {
+            font-family: Open Sans, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .circle {
+            width: 120px;
+            height: 120px;
+            background-color: lightgray;
+            border-radius: 50%;
+            margin: 0 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 29px;
+            color: black;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .circle.category1::after {
+        content: "Beddings";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category2::after {
+        content: "Cleaning Supplies";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -53px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category3::after {
+        content: "Storage";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category4::after {
+        content: "Food";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category5::after {
+        content: "Stationary";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category6::after {
+        content: "Entertainment";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category7::after {
+        content: "Bath Accessories";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -50px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category8::after {
+        content: "Kitchenware";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category9::after {
+        content: "Clothing";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category10::after {
+        content: "Electronics";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category11::after {
+        content: "Beauty";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+        .circle.category12::after {
+        content: "MediCare";
+        font-size: 18px;
+        color: black;
+        margin-top: 20px; 
+        position: absolute;
+        bottom: -30px; 
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: Open Sans, sans-serif;
+        
+}
+    </style>
+</head>
+<body>
+    <div class="categories-section">
+        <h2 class="categories-title">Categories</h2>
+        <div class="circle-container">
+            <a href="#" class="circle category1">
+                <i class="fi fi-rr-bed-alt"></i>
+            </a>
+            
+            <a href="#" class="circle category2">
+                <i class="fi fi-rr-broom"></i>
+            </a>
+            <a href="#" class="circle category3">
+                <i class="fi fi-rr-box"></i>
+            </a>
+            
+            <a href="#" class="circle category4">
+                <i class="fi fi-rr-hamburger-soda"></i>
+            </a>
+            <a href="papers.html" class="circle category5">
+                <i class="fi fi-rr-book-bookmark"></i>
+            </a>
+            <a href="#" class="circle category6">
+                <i class="fi fi-rr-clapperboard-play"></i>
+            </a>
+
+            
+        </div>
+    </div>
+    <div class="categories-section">
+        <div class="circle-container">
+            <a href="#" class="circle category7">
+                <i class="fi fi-rr-toilet-paper-blank"></i>
+            </a>
+            
+            <a href="#" class="circle category8">
+                <i class="fi fi-rr-restaurant"></i>
+            </a>
+            
+            <a href="#" class="circle category9">
+                <i class="fi fi-rr-c"></i>
+            </a>
+            
+            <a href="#" class="circle category10">
+                <i class="fi fi-rr-headphones"></i>
+            </a>
+            <a href="#" class="circle category11">
+                <i class="fi fi-rr-makeup-brush"></i>
+            </a>
+            <a href="#" class="circle category12">
+                <i class="fi fi-rr-doctor"></i>
+            </a>
+
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,146 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Step Progress Bar</title>
-    <link
-      rel="stylesheet"
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-page Registration Form</title>
+  <link rel="stylesheet" href="student.css">
+  <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
       integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="student.css" />
-  </head>
-  <body>
-    <div class="heading">
-      <h1>Step-up your Profile</h1>
-    </div>
+</head>
 
-    <div class="container">
-      <div class="progress-container">
-        <hr class="progress-bar-back" />
-        <hr class="progress-bar-front" />
-        <div class="step checked">
-          <i class="fas fa-check"></i>
-          <small>Start</small>
-        </div>
-        <div class="step">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="step">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="step">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="step">
-          <i class="fas fa-times"></i>
-        </div>
+<body>
+  <div class="heading">
+    <h1>Step-up your Profile</h1>
+  </div>
+
+  <div class="container">
+    <div class="progress-container">
+      <hr class="progress-bar-back" />
+      <hr class="progress-bar-front" />
+      <div class="step checked">
+        <i class="fas fa-check"></i>
+        <small>Start</small>
+      </div>
+      <div class="step">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="step">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="step">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="step">
+        <i class="fas fa-times"></i>
       </div>
     </div>
+  </div>
 
-    <div class="form-step" style="display: none;">
-      <h2>Shopper Information</h2>
-      <div class="input-container">
+
+  <form id="registrationForm" class="form-container">
+    <div class="form-page">
+      <h2>Basic Information</h2>
+      <div>
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name" />
+        <input type="text" id="name" name="name" required>
       </div>
-
-      <div class="profile-pic-container">
-        <label for="profile-pic">Profile Snap</label>
-        <div class="circular-input">
-            <input type="file" id="profile-pic" name="profile-pic" accept="image/*" />
-            <i class="fas fa-camera" id="upload-icon"></i>
-            <img id="profile-image" src=""  />
-        </div>
+      <div>
+        <label for="profile-pic">Profile Snap:</label>
+        <input type="file" id="profile-pic" name="profile-pic" accept="image/*" required>
+      </div>
+      <button class="next" type="button">Next</button>
     </div>
+    <div class="form-page">
+      <h2>Step 2: Contact Information</h2>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+      </div>
+      <button class="prev" type="button">Previous</button>
+      <button class="next" type="button">Next</button>
     </div>
-
-
-    <div class="form-step" style="display: none;">
-      <h2>Contact Information</h2>
-
-      <div class="input-container">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" />
-        <i class="fas fa-envelope"></i>
+    <div class="form-page">
+      <h2>Step 3: Academic Details</h2>
+      <div>
+        <label for="university">University:</label>
+        <input type="text" id="university" name="university" required>
       </div>
-
-      <div class="input-container">
-        <label for="password">PIN</label>
-        <input type="password" id="password" placeholder="Enter your password" />
-        <i class="fas fa-lock"></i>
+      <div>
+        <label for="major">Major:</label>
+        <input type="text" id="major" name="major" required>
       </div>
-
-      <div class="input-container">
-        <label for="contact">Contact Number</label>
-        <input type="tel" id="contact" placeholder="Enter your contact number" />
-        <i class="fas fa-phone"></i>
+      <div>
+        <label for="gradYear">Graduation Year:</label>
+        <input type="number" id="gradYear" name="gradYear" required>
       </div>
+      <button class="prev" type="button">Previous</button>
+      <button class="next" type="button">Next</button>
     </div>
-
-     
-
-    <div class="form-step" style="display: none;">
-      <h2>Academic Details</h2>
-      <div class="input-container">
-        <label for="university">University</label>
-        <input type="text" id="university" placeholder="Enter your university" />
+    <div class="form-page">
+      <h2>Step 4: Additional Information</h2>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
       </div>
-    
-      <div class="input-container">
-        <label for="major">Major</label>
-        <input type="text" id="major" placeholder="Enter your major/area of study" />
-      </div>
-    
-      <div class="input-container">
-        <label for="gradYear">Grad Year</label>
-        <input type="number" id="gradYear" placeholder="Enter your graduation year" />
-      </div>
-    </div>
-
-
-    <div class="form-step" style="display: none;">
-      <h2>Something More!</h2>
-    
-      <!-- Date of Birth -->
-      <div class="input-container">
-        <label for="date-of-birth">DOB</label>
-        <input type="date" id="date-of-birth" />
-      </div>
-    
-      <!-- Gender -->
-      <div class="input-container">
-        <label for="gender">Gender</label>
-        <select id="gender">
+      <div>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
       </div>
+      <button class="prev" type="button">Previous</button>
+      <button class="submit" type="submit">Submit</button>
     </div>
+  </form>
+
+  <div id="successMessage" style="display: none; color: green;">Data successfully saved!</div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js"></script> -->
 
 
-    <div class="form-step" style="display: none;">
-      <h2>CMart : Your One-Stop Shop</h2>
-      <p>Accept our terms and conditions</p>
-      <label class="switch">
-        <input type="checkbox" id="terms-checkbox">
-        <span class="slider round"></span>
-      </label>
-      
-    </div>
+  <script type="module">
+    const firebaseConfig = {
+      apiKey: "AIzaSyCCfMCRkQJiL7k2_1LZUNHh8MZZOKz567c",
+      authDomain: "cmart-1a475.firebaseapp.com",
+      databaseURL: "https://cmart-1a475-default-rtdb.firebaseio.com",
+      projectId: "cmart-1a475",
+      storageBucket: "cmart-1a475.appspot.com",
+      messagingSenderId: "259711064574",
+      appId: "1:259711064574:web:6638e89f05b012d2bd88af",
+      // measurementId: "G-TDZHZ1152B"
+    };
 
-    <div class="button-container">
-      <button class="btn" id="prev" disabled>
-        <i class="fas fa-arrow-left"></i>
-      </button>
-      <button class="btn" id="next"><i class="fas fa-arrow-right"></i></button>
-    </div>
+    firebase.initializeApp(firebaseConfig);
 
-    <script src="student.js"></script>
-  </body>
+    var messagesRef = firebase.database()
+      .ref('Collected Data');
+
+      const storage = firebase.storage();
+      const profilePicturesRef = storage.ref('profile_pictures');
+
+    document.getElementById('registrationForm')
+      .addEventListener('submit', submitForm);
+
+    function submitForm(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const contact = document.getElementById('contact').value;
+      const university = document.getElementById('university').value;
+      const major = document.getElementById('major').value;
+      const gradYear = document.getElementById('gradYear').value;
+      const dob = document.getElementById('dob').value;
+      const gender = document.getElementById('gender').value;
+
+      const file = document.getElementById('profile-pic').files[0];
+
+  const profilePictureRef = profilePicturesRef.child(file.name);
+  profilePictureRef.put(file).then(() => {
+    profilePictureRef.getDownloadURL().then((url) => {
+      saveMessage(name, email, password, url, contact, university, major, gradYear, dob, gender);
+    });
+  });
+
+
+      document.getElementById('registrationForm').reset();
+    }
+
+    function saveMessage(name, email, password, profilePictureUrl, contact, university, major, gradYear, dob, gender) {
+    console.log("Data to be saved:", name, email, password, profilePictureUrl, contact, university, major, gradYear, dob, gender);
+
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+      name: name,
+      email: email,
+      password: password,
+      profilePicture: profilePictureUrl,
+      contact: contact,
+      university: university,
+      major: major,
+      gradYear: gradYear,
+      dob: dob,
+      gender: gender
+    });
+  }
+
+  </script>
+</body>
+
 </html>

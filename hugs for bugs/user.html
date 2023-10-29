@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        .user-info {
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+        }
+
+        #userData {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: left;
+            margin-top: 20px;
+        }
+
+        #userData div {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            width: 400px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .navbar {
+    background-color: white;
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/* Style the individual boxes */
+.box {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    margin: 8px;
+}
+
+.box-left {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.box-middle {
+    flex: 0.5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-right {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.image-fit {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Style the icons */
+.box-right a,
+.box-left a {
+    font-size: 25px;
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.box-right a:hover,
+.box-left a:hover {
+    color: lightgray;
+}
+
+.icon-description {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="box box-left">
+            <a href="main.html" ><i class="fi fi-rr-home"></i></a>
+            <a href="#" ><i class="fi fi-rr-user"></i></a>
+        </div>
+
+        <div class="box box-middle">
+            <img src="CMart logo.png" alt="Image Description" class="image-fit">
+        </div>
+
+        <div class="box box-right">
+            <a href="categories.html" >    
+                <i class="fi fi-rr-list-timeline"></i>
+            </a>
+            
+            <a href="#" >
+                <i class="fi fi-rr-tags"></i>
+            </a>
+            
+
+            <a href="#" >
+                <i class="fi fi-rr-heart"></i>
+            </a>
+
+            <a href="#" >
+                <i class="fi fi-rr-shopping-cart"></i>
+            </a>
+        </div>
+
+    </div>
+    <div class="user-info">
+        <h1>User Account Information</h1>
+        <div id="userData"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js"></script> -->
+  
+  
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyCCfMCRkQJiL7k2_1LZUNHh8MZZOKz567c",
+        authDomain: "cmart-1a475.firebaseapp.com",
+        databaseURL: "https://cmart-1a475-default-rtdb.firebaseio.com",
+        projectId: "cmart-1a475",
+        storageBucket: "cmart-1a475.appspot.com",
+        messagingSenderId: "259711064574",
+        appId: "1:259711064574:web:6638e89f05b012d2bd88af",
+        // measurementId: "G-TDZHZ1152B"
+      };
+  
+      firebase.initializeApp(firebaseConfig);
+  
+      const messagesRef = firebase.database().ref('Collected Data');
+
+// Function to retrieve data
+function fetchData() {
+    messagesRef.on('value', (snapshot) => {
+        const data = snapshot.val();
+        displayUserData(data);
+    });
+}
+
+// Function to display user data
+function displayUserData(data) {
+    const userDataContainer = document.getElementById('userData');
+    
+    // Loop through the data and display it
+    for (let key in data) {
+        const userInfo = data[key];
+        const userInfoDiv = document.createElement('div');
+        userInfoDiv.innerHTML = `
+            <p>Name:  ${userInfo.name}</p>
+            <p>Profile snap <img src="${userInfo.profilePicture}" alt="Profile Picture"></p>
+            <p>Email:  ${userInfo.email}</p>
+            <p>Contact: ${userInfo.contact}</p>
+            <p>University:  ${userInfo.university}</p>
+            <p>Major:  ${userInfo.major}</p>
+            <p>Graduation Year:  ${userInfo.gradYear}</p>
+            <p>Date Of Birth:  ${userInfo.dob}</p>
+            <p>Gender:  ${userInfo.gender}</p>
+        `;
+        userDataContainer.appendChild(userInfoDiv);
+    }
+}
+
+// Call the function to fetch and display data
+fetchData();
+    </script>
+</body>
+</html>
