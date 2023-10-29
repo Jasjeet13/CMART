@@ -1,0 +1,59 @@
+ion-icon.big-icon {
+    font-size: 128px; /* Increase the icon size */
+    color: rgb(0, 214, 54);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(255, 255, 255)
+    background-size: cover;
+    background-position: center;
+}
+
+.splash {
+    text-align: center;
+}
+.splash img {
+    max-width: 200px;
+    animation: fadeInOut 2s ease-in-out infinite; /* Fade In and Out animation */
+}
+
+.splash p {
+    margin-top: 10px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out; /* Fade In animation */
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 16px; /* Increase the text size */
+    animation: fadeIn 1s ease-in-out; /* Fade In animation */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

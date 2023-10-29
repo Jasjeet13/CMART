@@ -1,0 +1,101 @@
+.top-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Add some padding for spacing */
+}
+
+.top-bar h1 {
+    font-size: 40px; /* You can adjust the font size as needed */
+}
+.content {
+    text-align: center; /* Center the form content */
+    margin: 20px; /* Add margin for spacing */
+}
+
+/* Center the content vertically and horizontally */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust the height to your preference */
+    text-align: center;
+}
+
+/* Style for form rows (input labels and fields) */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.form-row label {
+    font-weight: bold;
+    width: 150px; /* Set a fixed width for labels for alignment */
+    text-align: right;
+    margin-right: 10px; /* Add spacing between label and input */
+}
+.submit-button a.button {
+    background: #333; /* Transparent background */
+    color: rgb(255, 255, 255); /* Black text color */
+    border: 2px solid rgb(255, 255, 255); /* Black border */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underlines from anchor element */
+    display: inline-block; /* Make it inline-block to respect padding */
+    transition: background 0.3s, color 0.3s; /* Add transitions for hover effect */
+}
+
+.submit-button a.button:hover {
+    background: black; /* Black background on hover */
+    color: white; /* White text color on hover */
+}
+.form-row input,
+.form-row select,
+.form-row textarea {
+    flex: 1; /* Expand input fields to take available space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.image-upload {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Hide the input element */
+.image-upload input {
+    display: none;
+}
+
+/* Style for the image box */
+.image-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* Style for the uploaded image preview */
+#preview-image {
+    max-width: 100%;
+    max-height: 100%;
+    /* Remove the display: none; property */
+    /* Add initial dimensions to the element */
+    object-fit: cover;
+    z-index: -1;
+}
